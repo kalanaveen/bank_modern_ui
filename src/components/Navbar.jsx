@@ -29,7 +29,7 @@ const Navbar = () => {
           src={toggle ? menu : close}
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
-          onClick={() => setToggle(!toggle)}
+          onClick={() => setToggle((prev) => !prev)}
         />
         <div
           className={`${
